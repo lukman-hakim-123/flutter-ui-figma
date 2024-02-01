@@ -1,4 +1,5 @@
 import 'package:figma_furniture/features/home/widgets/category_home.dart';
+import 'package:figma_furniture/features/home/widgets/recommended_furniture_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -67,6 +68,7 @@ class MyHomePage extends StatelessWidget {
                 color: Color(0xFF4A4543),
               )),
             ),
+            Container(child: RecommendedFurnituresHome())
           ],
         ),
       ),
