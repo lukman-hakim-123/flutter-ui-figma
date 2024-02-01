@@ -1,3 +1,4 @@
+import 'package:figma_furniture/features/home/widgets/category_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -31,9 +32,11 @@ class MyHomePage extends StatelessWidget {
           ),
         ],
       ),
+      backgroundColor: const Color(0xFFF2F2F2),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 14.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 20,
@@ -48,7 +51,22 @@ class MyHomePage extends StatelessWidget {
                         fontSize: 22,
                         color: Color(0xFF4A4543))),
               ),
-            )
+            ),
+            const SizedBox(height: 30),
+            SizedBox(
+              height: 40,
+              child: CategoryHome(),
+            ),
+            const SizedBox(height: 30),
+            Text(
+              "Recommended Furnitures",
+              style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 16,
+                color: Color(0xFF4A4543),
+              )),
+            ),
           ],
         ),
       ),

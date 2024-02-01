@@ -62,14 +62,14 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/Brown Armchair.png
-    - assets/images/Modern Table.png
+    - assets/images/Brown_Armchair.png
+    - assets/images/Modern_Table.png
     - assets/images/person.png
-    - assets/images/star yellow.png
+    - assets/images/star_yellow.png
     - assets/images/star.png
-    - assets/images/Stylish Chair.png
-    - assets/images/Wooden Coff.png
-    - assets/images/Wooden Console.png
+    - assets/images/Stylish_Chair.png
+    - assets/images/Wooden_Coff.png
+    - assets/images/Wooden_Console.png
 
     - assets/icons/back_arrow.svg
     - assets/icons/chart.svg
