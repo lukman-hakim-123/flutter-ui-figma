@@ -30,6 +30,30 @@ class RecommendedFurnituresHome extends StatelessWidget {
       'star': 4.9,
       'image': 'assets/images/Brown_Armchair.png',
     },
+    {
+      'name': 'Stylish Chair',
+      'price': 170,
+      'star': 4.8,
+      'image': 'assets/images/Stylish_Chair.png',
+    },
+    {
+      'name': 'Modern Table',
+      'price': 75,
+      'star': 4.9,
+      'image': 'assets/images/Modern_Table.png',
+    },
+    {
+      'name': 'Wooden Console',
+      'price': 240,
+      'star': 4.7,
+      'image': 'assets/images/Wooden_Console.png',
+    },
+    {
+      'name': 'Brown Armchair',
+      'price': 210,
+      'star': 4.9,
+      'image': 'assets/images/Brown_Armchair.png',
+    },
   ];
   @override
   Widget build(BuildContext context) {

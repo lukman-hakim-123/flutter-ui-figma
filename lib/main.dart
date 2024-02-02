@@ -1,3 +1,4 @@
+import 'package:figma_furniture/features/detail/pages/detailpage.dart';
 import 'package:figma_furniture/features/home/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const MyHomePage());
+        home: DetailPage());
   }
 }

@@ -1,3 +1,4 @@
+import 'package:figma_furniture/features/home/widgets/bottom_navigation_bar_home.dart';
 import 'package:figma_furniture/features/home/widgets/category_home.dart';
 import 'package:figma_furniture/features/home/widgets/recommended_furniture_home.dart';
 import 'package:flutter/material.dart';
@@ -53,12 +54,12 @@ class MyHomePage extends StatelessWidget {
                         color: Color(0xFF4A4543))),
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 25),
             SizedBox(
               height: 40,
               child: CategoryHome(),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 25),
             Text(
               "Recommended Furnitures",
               style: GoogleFonts.poppins(
@@ -68,10 +69,14 @@ class MyHomePage extends StatelessWidget {
                 color: Color(0xFF4A4543),
               )),
             ),
-            Container(child: RecommendedFurnituresHome())
+            const SizedBox(height: 15),
+            Expanded(
+              child: RecommendedFurnituresHome(),
+            ),
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavBar(),
     );
   }
 }

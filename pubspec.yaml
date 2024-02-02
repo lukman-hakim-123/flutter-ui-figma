@@ -47,7 +47,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -65,14 +65,18 @@ flutter:
     - assets/images/Brown_Armchair.png
     - assets/images/Modern_Table.png
     - assets/images/person.png
-    - assets/images/star_yellow.png
-    - assets/images/star.png
     - assets/images/Stylish_Chair.png
     - assets/images/Wooden_Coff.png
     - assets/images/Wooden_Console.png
 
     - assets/icons/back_arrow.svg
+    - assets/icons/home.svg
+    - assets/icons/user.svg
     - assets/icons/chart.svg
+    - assets/icons/min.svg
+    - assets/icons/plus.svg
+    - assets/icons/star.svg
+    - assets/icons/Score.svg
     - assets/icons/fav.svg
     - assets/icons/search.svg
     - assets/icons/share.svg
