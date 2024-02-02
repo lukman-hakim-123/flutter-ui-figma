@@ -1,5 +1,6 @@
 import 'package:figma_furniture/features/detail/pages/detailpage.dart';
 import 'package:figma_furniture/features/home/pages/homepage.dart';
+import 'package:figma_furniture/medical/features/home/page/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +20,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: DetailPage());
+        home: HomePageMedical());
   }
 }

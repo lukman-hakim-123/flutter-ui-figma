@@ -64,10 +64,16 @@ flutter:
   assets:
     - assets/images/Brown_Armchair.png
     - assets/images/Modern_Table.png
-    - assets/images/person.png
     - assets/images/Stylish_Chair.png
     - assets/images/Wooden_Coff.png
     - assets/images/Wooden_Console.png
+    # 
+    - assets/medical/images/Cognition.png
+    - assets/medical/images/Fluency.png
+    - assets/medical/images/Language.png
+    - assets/medical/images/foto1.png
+    - assets/medical/images/doc1.png
+    - assets/medical/images/Speech.png
 
     - assets/icons/back_arrow.svg
     - assets/icons/home.svg
@@ -81,6 +87,17 @@ flutter:
     - assets/icons/search.svg
     - assets/icons/share.svg
     - assets/icons/threeline.svg
+    # 
+    - assets/medical/icons/Calender.svg
+    - assets/medical/icons/Ellipse.svg
+    - assets/medical/icons/Home.svg
+    - assets/medical/icons/Menu.svg
+    - assets/medical/icons/Message.svg
+    - assets/medical/icons/Notification.svg
+    - assets/medical/icons/Search.svg
+    - assets/medical/icons/Star.svg
+    - assets/medical/icons/Vector.svg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
