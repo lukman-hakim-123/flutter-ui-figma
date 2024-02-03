@@ -1,9 +1,16 @@
+import 'package:figma_furniture/medical/features/appointment/appointment.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ListDoctor extends StatelessWidget {
+class ListDoctor extends StatefulWidget {
   ListDoctor({super.key});
+
+  @override
+  State<ListDoctor> createState() => _ListDoctorState();
+}
+
+class _ListDoctorState extends State<ListDoctor> {
   final List<Map<String, dynamic>> doctors = [
     {
       "name": "Saparov Merdan",
@@ -12,9 +19,9 @@ class ListDoctor extends StatelessWidget {
       "star": "4.8"
     },
     {
-      "name": "Saparov Merdan",
-      "job": "Speech therapist, (Ashgabat)",
-      "image": "assets/medical/images/doc1.png",
+      "name": "Chariyeva Leyla",
+      "job": "Language therapist, (Ashgabat)",
+      "image": "assets/medical/images/doc2.png",
       "star": "4.8"
     },
     {
@@ -30,10 +37,22 @@ class ListDoctor extends StatelessWidget {
       "star": "4.8"
     }
   ];
+  // B28CFF
+  ColorFilter _colorFilter =
+      ColorFilter.mode(Color(0xFFB28CFF), BlendMode.srcIn);
+  void _selectedColor() {
+    setState(() {
+      _colorFilter =
+          (_colorFilter == ColorFilter.mode(Color(0xFFB28CFF), BlendMode.src))
+              ? ColorFilter.mode(Colors.red, BlendMode.src)
+              : ColorFilter.mode(Color(0xFFB28CFF), BlendMode.src);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        padding: EdgeInsets.only(top: 0),
         itemCount: doctors.length,
         itemBuilder: (BuildContext context, int index) {
           return Padding(
@@ -42,7 +61,8 @@ class ListDoctor extends StatelessWidget {
               height: 129,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  border: Border.all(width: 2, color: Color(0xFFF7F8F8))),
+                  border: Border.all(width: 2, color: Color(0xFFF7F8F8)),
+                  borderRadius: BorderRadius.all(Radius.circular(15))),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -118,7 +138,11 @@ class ListDoctor extends StatelessWidget {
                             width: 130,
                             height: 34,
                             child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (context) =>
+                                          const Appointment()));
+                                },
                                 child: Text(
                                   "Appointment",
                                   style: GoogleFonts.poppins(
@@ -140,7 +164,7 @@ class ListDoctor extends StatelessWidget {
                             width: 50,
                             height: 34,
                             child: IconButton(
-                                onPressed: () {},
+                                onPressed: _selectedColor,
                                 icon: (SvgPicture.asset(
                                   "assets/medical/icons/Vector.svg",
                                 ))),

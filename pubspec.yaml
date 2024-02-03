@@ -73,6 +73,7 @@ flutter:
     - assets/medical/images/Language.png
     - assets/medical/images/foto1.png
     - assets/medical/images/doc1.png
+    - assets/medical/images/doc2.png
     - assets/medical/images/Speech.png
 
     - assets/icons/back_arrow.svg
@@ -94,9 +95,12 @@ flutter:
     - assets/medical/icons/Menu.svg
     - assets/medical/icons/Message.svg
     - assets/medical/icons/Notification.svg
+    - assets/medical/icons/Ellipse_bottombar.svg
     - assets/medical/icons/Search.svg
     - assets/medical/icons/Star.svg
     - assets/medical/icons/Vector.svg
+    - assets/medical/icons/Arrow_Right.svg
+    - assets/medical/icons/Illustration.svg
 
   #   - images/a_dot_ham.jpeg
 
