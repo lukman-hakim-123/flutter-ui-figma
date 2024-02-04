@@ -8,6 +8,7 @@ class AppBarHome extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      scrolledUnderElevation: 0.0,
       leading: IconButton(
         icon: SvgPicture.asset("assets/medical/icons/Menu.svg"),
         onPressed: () {

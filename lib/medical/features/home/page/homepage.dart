@@ -94,14 +94,14 @@ class HomePageMedical extends StatelessWidget {
                       ),
                     )),
                 SizedBox(
-                  height: 20,
+                  height: 25,
                 ),
                 Column(
                   children: [
                     Align(
                       alignment: Alignment.topLeft,
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 20),
+                        padding: const EdgeInsets.only(left: 20, bottom: 15),
                         child: Text(
                           "Categories",
                           style: GoogleFonts.poppins(
@@ -111,10 +111,13 @@ class HomePageMedical extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 90, child: Categories()),
-                    SizedBox(height: 15),
-                    SizedBox(height: 190, child: ListDoctor()),
+                    SizedBox(height: 20),
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 15),
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: SizedBox(height: 180, child: ListDoctor()),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: Container(
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(20)),
